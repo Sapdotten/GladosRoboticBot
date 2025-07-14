@@ -5,7 +5,7 @@ class BotConfig(BaseSettings):
     token: str
     channel_id: str
 
-    model_config = SettingsConfigDict(env_file="../.env", extra="ignore")
+    model_config = SettingsConfigDict(env_file=".env", extra="ignore")
 
 
 class DeepSeekConfig(BaseSettings):
@@ -15,4 +15,4 @@ class DeepSeekConfig(BaseSettings):
     ai_token: str
     headless: bool
 
-    model_config = SettingsConfigDict(env_file="../.env", extra="ignore")
+    model_config = SettingsConfigDict(env_file=".env", extra="ignore")

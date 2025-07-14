@@ -1,2 +1,2 @@
-docker build -t bot .
-docker run -d bot
+docker build -t glados .
+docker run -d glados

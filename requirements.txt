@@ -1,4 +1,4 @@
 aiogram==3.21.0
-asycnio==3.4.3
+asyncio==3.4.3
 git+https://github.com/Sapdotten/DeeperSeek.git
 pydantic-settings==2.10.1
