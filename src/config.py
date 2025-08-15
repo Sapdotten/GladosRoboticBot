@@ -5,14 +5,22 @@ class BotConfig(BaseSettings):
     token: str
     channel_id: str
 
-    model_config = SettingsConfigDict(env_file=".env", extra="ignore")
+    model_config = SettingsConfigDict(
+        env_file=".env",
+        extra="ignore",
+        prefix="BOT"
+    )
 
 
 class DeepSeekConfig(BaseSettings):
     email: str
     password: str
     chat_id: str
-    ai_token: str
-    headless: bool
+    token: str
+    headless: bool = True
 
-    model_config = SettingsConfigDict(env_file=".env", extra="ignore")
+    model_config = SettingsConfigDict(
+        env_file=".env",
+        extra="ignore",
+        prefix="AI"
+    )
