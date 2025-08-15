@@ -28,6 +28,6 @@ docker run -d glados
 ## О клубе
 Клуб **ROBOTIC** — это студенческое объединение *Самарского университета*. Мы занимаемся робототехникой, программированием, электроникой и 3D-моделированием. Открыты для всех, кто хочет развиваться и участвовать в технических проектах.
 
-VK: `https://vk.com/robotic_samara`
+VK: [https://vk.com/robotic_samara](https://vk.com/robotic_samara)
 
-TG: `t.me/robotic_samara`
+TG: [t.me/robotic_samara](t.me/robotic_samara)
