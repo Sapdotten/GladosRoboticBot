@@ -1,7 +1,5 @@
-# Используем базовый образ Python
 FROM python:3.11-slim
 
-# Устанавливаем рабочую директорию в контейнере
 WORKDIR /app
 RUN apt update && apt install -y \
     git \
@@ -23,20 +21,13 @@ RUN apt update && apt install -y \
     libxrandr2 \
     xdg-utils \
     xvfb \
- && apt clean \
- && rm -rf /var/lib/apt/lists/*
+    && apt clean \
+    && rm -rf /var/lib/apt/lists/*
 
-# Копируем файл зависимостей в рабочую директорию
 COPY requirements.txt .
 
-# Устанавливаем зависимости
 RUN pip install -r requirements.txt
 
-# Копируем все содержимое текущей директории в рабочую директорию контейнера
 COPY . .
-
-
-# Копируем файл .env
-#COPY .env ./app/.env
 
 CMD ["python3", "src/main.py"]

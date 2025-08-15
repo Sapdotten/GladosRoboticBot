@@ -34,12 +34,12 @@ class Glados:
                 "Текст поста:"
                 '"' + text + '"'
             ),
-            deepthink=False,  # Whether to use the DeepThink option or not
-            search=False,  # Whether to use the Search option or not
-            slow_mode=False,  # Whether to send the message in slow mode or not
-            slow_mode_delay=0.25,  # The delay between each character when sending the message in slow mode
-            timeout=60,  # The time to wait for the response before timing out
-        )  # Returns a Response object
+            deepthink=False,
+            search=False, 
+            slow_mode=False,
+            slow_mode_delay=0.25,
+            timeout=60,
+        ) 
 
         if response:
             return response.text
